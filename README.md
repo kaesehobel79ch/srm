@@ -1,4 +1,4 @@
-# SRM – System Resource Monitor
+# `SRM – System Resource Monitor`
 
 SRM zeigt auf einen Blick, wie stark Ihr Rechner gerade arbeitet. Alles steht auf einer einzigen Oberfläche, es gibt nichts umzuschalten.
 

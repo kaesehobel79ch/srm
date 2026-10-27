@@ -1,0 +1,191 @@
+﻿NUTZUNGSBEDINGUNGEN
+SRM - System Resource Monitor
+Copyright (c) 2026 Kaese_Hobel. Alle Rechte vorbehalten.
+
+
+1. KOSTENLOSE NUTZUNG
+
+SRM - System Resource Monitor ist Freeware. Die Nutzung ist
+kostenlos, privat wie geschäftlich, ohne zeitliche Begrenzung
+und ohne Registrierung.
+
+
+2. WEITERGABE
+
+Die Weitergabe ist erlaubt, sofern das Programm unverändert und
+vollständig weitergegeben wird, einschliesslich dieser
+Nutzungsbedingungen. Eine Weitergabe gegen Entgelt, als Teil eines
+kostenpflichtigen Pakets oder in Verbindung mit Werbung ist nicht
+gestattet.
+
+
+3. KEIN QUELLCODE
+
+Der Quellcode wird nicht veröffentlicht. Rückbau, Entschlüsselung,
+Zerlegung des Programms oder das Verändern der Programmdatei sind
+nicht gestattet, soweit das Gesetz dies nicht zwingend erlaubt.
+Ziffer 9 bleibt davon unberührt: für die dort genannten fremden
+Bestandteile gelten deren eigene Lizenzen.
+
+
+4. ADMINISTRATORRECHTE
+
+Das Programm fordert beim Start Administratorrechte an. Diese
+werden ausschliesslich benötigt, um Sensorwerte des Rechners zu
+lesen (Temperaturen, Auslastung). Es werden keine Einstellungen
+des Systems verändert.
+
+Einzige Ausnahme ist der Schalter "Grafik neu starten". Er sendet
+die von Windows vorgesehene Tastenfolge, mit der das
+Betriebssystem den Grafiktreiber neu startet. Der Schalter wirkt
+erst nach ausdrücklicher Bestätigung. Es werden dabei keine
+Einstellungen geändert und keine Treiber installiert oder
+ausgetauscht. Laufende Programme, insbesondere Spiele und
+Videoanwendungen, können durch den Neustart des Treibers
+beendet werden; eine Haftung hierfür ist nach Ziffer 8
+ausgeschlossen.
+
+Das Programm legt im Benutzerordner unter AppData\Local\SRM eine
+Aufzeichnungsdatei und eine Datei mit den eigenen Einstellungen
+an. Ausserhalb dieses Ordners schreibt es nichts.
+
+
+5. MESSWERTE
+
+Alle angezeigten Werte sind Anzeigewerte. Je nach Rechner, BIOS und
+Windows-Einstellungen können einzelne Werte fehlen oder von den
+Werten anderer Programme abweichen.
+
+Die CPU-Temperatur wird über den Treiber PawnIO gelesen, sofern
+dieser auf dem Rechner vorhanden ist. Ist PawnIO nicht vorhanden,
+übernimmt das Programm die Temperatur aus der Meldung des BIOS;
+dieser Wert kann einige Grad abweichen. Das Programm weist in
+diesem Fall im Fenster darauf hin. Näheres unter Ziffer 6.
+
+Die Werte sind nicht für Zwecke geeignet, bei denen es auf
+Messgenauigkeit ankommt.
+
+
+6. DER TREIBER PAWNIO
+
+Beim Installieren wird gefragt, ob der Treiber PawnIO
+mitinstalliert werden soll. Die Frage muss ausdrücklich mit Ja
+oder Nein beantwortet werden.
+
+PawnIO stammt nicht von uns, sondern von namazso (pawnio.eu). Er
+wird ausschliesslich dazu benutzt, Sensorwerte des Prozessors zu
+lesen - vor allem die Kerntemperatur, die Windows sonst nicht
+herausgibt. Es werden über ihn keine Einstellungen verändert und
+keine Daten übertragen.
+
+Wird Ja gewählt, startet nach der Installation von SRM der
+Installer von PawnIO in einem eigenen Fenster. PawnIO wird dabei
+als eigenständiges Programm eingetragen und lässt sich über die
+Windows-Einstellungen jederzeit wieder entfernen, unabhängig von
+SRM. Wird Nein gewählt, wird PawnIO nicht angerührt; SRM läuft
+dann mit der ungenaueren Temperatur aus der BIOS-Meldung.
+
+PawnIO steht unter der GNU General Public License Version 2 oder
+später. Diese Lizenz betrifft ausschliesslich PawnIO und nicht
+SRM: SRM spricht mit dem Treiber nur über dessen allgemeine
+Schnittstelle, wofür die Lizenz eine ausdrückliche Ausnahme
+vorsieht.
+
+Der vollständige Lizenztext wird zusammen mit PawnIO in den
+Programmordner gelegt (PawnIO_Lizenz.txt). Der Quellcode ist
+öffentlich abrufbar unter:
+https://github.com/namazso/PawnIO
+
+Für PawnIO gilt die Gewährleistung und Haftung des dortigen
+Urhebers nach dessen Lizenzbedingungen. Eine darüber
+hinausgehende Haftung unsererseits für diesen Treiber besteht
+nicht.
+
+
+7. NETZWERKVERBINDUNGEN
+
+Das Programm zeigt die laufenden Netzwerkverbindungen dieses
+Rechners an. Diese Angaben werden ausschliesslich gelesen und nur
+im Fenster sowie in der örtlichen Aufzeichnungsdatei dargestellt.
+Es werden keine Verbindungen getrennt oder blockiert, keine
+Einstellungen des Netzwerks verändert und keine Daten an Dritte
+übermittelt.
+
+Um den Namen einer Gegenstelle anzuzeigen, fragt das Programm den
+Namensdienst (DNS) ab, der auf diesem Rechner eingestellt ist und
+bei jedem Seitenaufruf ohnehin benutzt wird. Ein anderer Dienst
+im Internet wird nicht befragt. Angaben über die Nutzerin oder
+den Nutzer werden dabei nicht übermittelt.
+
+Die Bewertung einer Verbindung als "von aussen" ist ein Hinweis
+und kein Sicherheitsurteil. Das Programm ist weder eine Firewall
+noch ein Virenschutz und ersetzt beides nicht.
+
+
+8. KEINE GEWÄHR, KEINE HAFTUNG
+
+Das Programm wird ohne jede Gewähr überlassen, "wie es ist". Es
+wird keine Zusicherung gegeben, dass es fehlerfrei arbeitet, für
+einen bestimmten Zweck geeignet ist oder auf jedem Rechner läuft.
+
+Eine Haftung für Schäden, die aus der Nutzung oder der
+Nichtnutzbarkeit des Programms entstehen, ist ausgeschlossen,
+soweit das Gesetz dies zulässt. Von diesem Ausschluss unberührt
+bleibt die Haftung für Vorsatz und grobe Fahrlässigkeit sowie für
+Schäden aus der Verletzung des Lebens, des Körpers oder der
+Gesundheit.
+
+
+9. VERWENDETE KOMPONENTEN
+
+Zum Auslesen der Sensoren wird fremde Software verwendet. Sie ist
+fest in die Programmdatei eingebaut und wird zusammen mit SRM
+weitergegeben. Die vollständigen Lizenztexte liegen nach der
+Installation im Programmordner in der Datei
+Komponenten_Lizenzen.txt.
+
+Unter der Mozilla Public License 2.0 stehen:
+LibreHardwareMonitorLib, DiskInfoToolkit, RAMSPDToolkit und
+BlackSharp.Core. Quellcode und Lizenztext:
+https://github.com/LibreHardwareMonitor/LibreHardwareMonitor
+https://github.com/Blacktempel/DiskInfoToolkit
+https://github.com/Blacktempel/RAMSPDToolkit
+https://github.com/Blacktempel/BlackSharp
+https://mozilla.org/MPL/2.0/
+
+Unter der Apache License 2.0 steht HidSharp von James F.
+Bellinger:
+https://software.seekye.com/hidsharp
+https://www.apache.org/licenses/LICENSE-2.0
+
+Unter der GNU Lesser General Public License Version 2.1 stehen
+die PawnIO-Module. Das sind die kleinen Lesebausteine, mit denen
+der Treiber aus Ziffer 6 die Sensoren ausliest; sie stecken in
+LibreHardwareMonitorLib und damit in der Programmdatei. Sie
+dürfen durch eigene Fassungen ersetzt werden.
+https://github.com/namazso/PawnIO.Modules
+https://www.gnu.org/licenses/old-licenses/lgpl-2.1.html
+
+
+10. HINWEIS ZUR ENTWICKLUNG
+
+Bei der Entwicklung dieses Programms wurde KI-Unterstützung
+eingesetzt. Der Quellcode wurde durch den Entwickler geprüft,
+angepasst und für dieses Projekt zusammengestellt.
+
+
+11. MARKEN
+
+Windows, Microsoft, Intel, AMD und NVIDIA sind Marken der
+jeweiligen Unternehmen. Es besteht keine Verbindung zu diesen
+Unternehmen und keine Unterstützung durch sie.
+
+
+12. ANNAHME
+
+Mit der Installation oder Nutzung des Programms werden diese
+Bedingungen angenommen. Wer sie nicht annimmt, darf das Programm
+nicht installieren und nicht nutzen.
+
+
+Stand: 28.09.2026

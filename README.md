@@ -46,7 +46,7 @@ PawnIO liegt dem Setup bei. Beim Installieren werden Sie gefragt, ob es mitinsta
 - Windows 11 (64 Bit); Windows 10 ebenfalls, sofern das System auf dem letzten Stand ist
 - Administratorrechte (nur zum Lesen der Sensoren; SRM verändert nichts am System)
 
-Das Programm ist nicht digital signiert. Beim ersten Start kann sich deshalb der Windows-Schutz SmartScreen oder ein Virenscanner melden. Das ist ein Fehlalarm.
+Das Setup ist mit dem eigenen Zertifikat von Käse_Hobel signiert, nicht mit einem Zertifikat, das Windows kennt. Beim ersten Start kann sich deshalb der Windows-Schutz SmartScreen oder ein Virenscanner melden. Das ist ein Fehlalarm.
 
 ## Echtheit prüfen
 
